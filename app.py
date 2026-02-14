@@ -161,7 +161,7 @@ elif st.session_state.stage=="gallery":
 
     st.title("KENANGAN KITA, LEBIH TEPATNYA KENANGANMU")
 
-    photos = [BASE_DIR / f"photo{i}.jpg" for i in range(1,10)]
+    photos = [BASE_DIR / f"photo{i}.jpg" for i in range(1,15)]
 
     for i in range(0,len(photos),5):
         cols=st.columns(5)
