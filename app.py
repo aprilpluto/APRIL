@@ -73,7 +73,16 @@ quiz = [
  ["MEI","APRIL","DOKTER","SAVIRA"],"APRIL"),
 
 ("Jika Pluto mengajak Mei mengasing sejenak dari dunia manusia April ingin pergi ke mana?",
- ["RUANG TENANG BERDUA","KONSER BESAR TULUS JANGAN DIKLIK:)","PUSAT PERBELANJAAN","STADION RAMAI"],"RUANG TENANG BERDUA")
+ ["RUANG TENANG BERDUA","KONSER BESAR TULUS JANGAN DIKLIK:)","PUSAT PERBELANJAAN","STADION RAMAI"],"RUANG TENANG BERDUA") 
+
+("Saat aku menatapmu lebih lama dari biasanya, sebenarnya aku sedang…?",
+ ["MENYIMPAN RINDU","MENGHAPAL KAMU","MENENANGKAN HATI","MENJAGA PERASAAN"],"MENGHAPAL KAMU")
+
+("Jika aku memberimu bunga tanpa kartu, maksud tersembunyiku?",
+ ["RASA TINGGAL","MULAI JADI ABADI","PENGENDALI WAKTU","TEMPAT PULANG"],"TEMPAT PULANG")
+
+("Jika malam ini aku hanya tersenyum melihatmu, itu karena…?",
+ ["BENTUK SYUKURKU","CINTA YANG TENANG","DAMAI YANG NYATA","MENEMUKAN SEMESTANYA"],"MENEMUKAN SEMESTANYA")
 ]
 # ================= QUIZ PAGE =================
 if st.session_state.stage=="quiz":
@@ -161,7 +170,7 @@ elif st.session_state.stage=="gallery":
 
     st.title("KENANGAN KITA, LEBIH TEPATNYA KENANGANMU")
 
-    photos = [BASE_DIR / f"photo{i}.jpg" for i in range(1,15)]
+    photos = [BASE_DIR / f"photo{i}.jpg" for i in range(1,16)]
 
     for i in range(0,len(photos),5):
         cols=st.columns(5)
