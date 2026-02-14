@@ -158,7 +158,7 @@ elif st.session_state.stage=="gallery":
 
     st.title("KENANGAN KITA, LEBIH TEPATNYA KENANGANMU")
 
-    photos=[f"photo{i}.jpg" for i in range(1,11)]
+    photos=[f"photo{i}.jpg" for i in range(1,16)]
 
     for i in range(0,len(photos),5):
         cols=st.columns(5)
