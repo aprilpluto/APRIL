@@ -154,17 +154,24 @@ Mei. Tidak lebih, tidak tumpah, tapi aku mengetukmu suka**
         st.rerun()
 
 # ================= GALLERY =================
-elif st.session_state.stage=="gallery":
+from pathlib import Path
 
-    st.title("KENANGAN KITA, LEBIH TEPATNYA KENANGANMU")
+st.title("KENANGAN KITA 📸")
+st.markdown("Beberapa potongan waktu yang pernah singgah dan mungkin masih menyimpan sesuatu yang belum selesai.")
 
-    photos=[f"photo{i}.jpg" for i in range(1,16)]
+photos=[]
+for i in range(1,16):
+    for ext in ["JPG","jpg","jpeg","PNG","png"]:
+        file=Path(f"photo{i}.{ext}")
+        if file.exists():
+            photos.append(str(file))
+            break
 
-    for i in range(0,len(photos),5):
-        cols=st.columns(5)
-        for j in range(5):
-            if i+j<len(photos):
-                cols[j].image(photos[i+j],use_container_width=True)
+for i in range(0,len(photos),5):
+    cols=st.columns(5)
+    for j in range(5):
+        if i+j<len(photos):
+            cols[j].image(photos[i+j],use_container_width=True)
 
     if st.button("BUKA SURAT SINGKAT 💌"):
         st.info("Tidak semua pertemuan harus dijelaskan nona. Beberapa cukup dirasakan dan dinikmati keniscayaannya.")
