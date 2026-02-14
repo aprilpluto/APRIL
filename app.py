@@ -88,9 +88,11 @@ quiz = [
 ("Jika aku memberimu bunga tanpa kartu, maksud tersembunyiku?",
  ["RASA TINGGAL","MULAI JADI ABADI","PENGENDALI WAKTU","TEMPAT PULANG"],"TEMPAT PULANG"),
 
+
 ("Jika malam ini aku hanya tersenyum melihatmu, itu karena…?",
  ["BENTUK SYUKURKU","CINTA YANG TENANG","DAMAI YANG NYATA","MENEMUKAN SEMESTANYA"],"MENEMUKAN SEMESTANYA"),
 ]
+
 # ================= QUIZ PAGE =================
 if st.session_state.stage=="quiz":
 
@@ -136,6 +138,7 @@ elif st.session_state.stage=="coming":
     time.sleep(2)
     st.session_state.stage="result"
     st.rerun()
+
 
 # ================= RESULT =================
 elif st.session_state.stage=="result":
