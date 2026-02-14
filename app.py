@@ -190,7 +190,7 @@ elif st.session_state.stage=="gallery":
 
     if st.button("BUKA SURAT SINGKAT 💌"):
         st.info("Tidak semua pertemuan harus dijelaskan nona. Beberapa cukup dirasakan dan dinikmati keniscayaannya.")
-        st.info("Dan beberapa orang datang, pergi pulang hilang… berggantian... mengajarkanmu tetap tumbun semakin terang")
+        st.info("Dan beberapa orang datang, pergi pulang hilang… berggantian... mengajarkanmu tetap tumbuh semakin terang")
 
     if st.button("↻ Ulangi Quiz"):
         st.session_state.clear()
