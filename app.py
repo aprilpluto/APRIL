@@ -63,18 +63,23 @@ quiz = [
 ("Di mana pertemuan pertama Pluto dan April terjadi?",
  ["LIVE TIKTOK","INSTAGRAM","TWITTER","TELEGRAM"],"LIVE TIKTOK"),
 
+
 ("Sebagai anak koas fakultas kedokteran yang fokus pada kesehatan saraf, Mei paling sering mempelajari apa?",
  ["EKONOMI","SISTEM SARAF","PSIKOLOGI:)","HUKUM"],"SISTEM SARAF"),
+
 
 ("Kalau dua orang INFJ saling memahami, mereka paling nyaman berbicara dalam suasana seperti apa?",
  ["SUNYI DAN DALAM","RAMAI DAN HIRUK","DEBAT TERBUKA","KERAMAIAN"],"SUNYI DAN DALAM"),
 
+
 ("Pluto memanggil Meily dengan sebutan spontan yang sederhana namun bermakna apa itu?",
  ["MEI","APRIL","DOKTER","SAVIRA"],"APRIL"),
+
 
 ("Jika Pluto mengajak Mei mengasing sejenak dari dunia manusia April ingin pergi ke mana?",
  ["RUANG TENANG BERDUA","KONSER BESAR TULUS JANGAN DIKLIK:)","PUSAT PERBELANJAAN","STADION RAMAI"],
     "RUANG TENANG BERDUA"),
+
 
 ("Saat aku menatapmu lebih lama dari biasanya, sebenarnya aku sedang…?",
  ["MENYIMPAN RINDU","MENGHAPAL KAMU","MENENANGKAN HATI","MENJAGA PERASAAN"], "MENGHAPAL KAMU"),
