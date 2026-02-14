@@ -156,15 +156,18 @@ Mei. Tidak lebih, tidak tumpah, tapi aku mengetukmu suka**
 # ================= GALLERY =================
 elif st.session_state.stage=="gallery":
 
+    from pathlib import Path
+    BASE_DIR = Path(__file__).parent
+
     st.title("KENANGAN KITA, LEBIH TEPATNYA KENANGANMU")
 
-    photos=[f"photo{i}.PNG" for i in range(1,15)]
+    photos = [BASE_DIR / f"photo{i}.jpg" for i in range(1,16)]
 
     for i in range(0,len(photos),5):
         cols=st.columns(5)
         for j in range(5):
-            if i+j<len(photos):
-                cols[j].image(photos[i+j],use_container_width=True)
+            if i+j < len(photos) and photos[i+j].exists():
+                cols[j].image(str(photos[i+j]),use_container_width=True)
 
     if st.button("BUKA SURAT SINGKAT 💌"):
         st.info("Tidak semua pertemuan harus dijelaskan nona. Beberapa cukup dirasakan dan dinikmati keniscayaannya.")
