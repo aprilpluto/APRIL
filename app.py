@@ -159,7 +159,7 @@ from pathlib import Path
 BASE_DIR = Path(__file__).parent.parent  # naik 1 folder keluar dari /april
 
 st.title("KENANGAN KITA 📸")
-st.markdown("Beberapa potongan waktu yang pernah singgah — dan mungkin masih menyimpan sesuatu yang belum selesai.")
+st.markdown("Beberapa potongan waktu yang pernah singgah di kamu prill, dan mungkin masih menyimpan sesuatu yang belum selesai.")
 
 photos=[]
 for i in range(1,16):
